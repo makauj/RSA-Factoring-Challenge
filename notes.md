@@ -111,5 +111,3 @@ if __name__ == "__main__":
 
 - **Time Efficiency**: The trial division method is effective for smaller numbers but may become slow for larger inputs. If necessary, consider implementing more sophisticated methods.
 - **Error Handling**: Make sure to include error handling for file operations, such as handling non-existent files.
-
-This program should meet the requirements you outlined, and you can push it to your repository once complete. Let me know if you have any questions or need further assistance!
