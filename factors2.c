@@ -78,7 +78,7 @@ void factorize(unsigned long n)
 	}
 	else
 	{
-		printf("%lu=%lu*%lu\n", n, div, n / div);
+		printf("%lu=%lu*%lu\n", n, n / div, div);
 	}
 }
 
