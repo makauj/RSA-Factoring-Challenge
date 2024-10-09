@@ -6,7 +6,7 @@
  * gcd - function that computes the greatest common divisor
  * @a: divisor 1
  * @b: divisor
- * 
+ *
  * Return: a
  */
 
@@ -27,7 +27,7 @@ unsigned long gcd(unsigned long a, unsigned long b)
  * pollards_rho - function attempts to find a factor of the number n
  *  using a pseudo-random process
  * @n: number to factorize
- * 
+ *
  * Return: 1
  */
 
@@ -37,7 +37,7 @@ unsigned long pollards_rho(unsigned long n)
 	unsigned long y = x;
 	unsigned long c = rand() % n + 1;
 	unsigned long d = 1;
-    int i = 0;
+	int i = 0;
 
 	if (n % 2 == 0)
 		return (2);
@@ -61,7 +61,7 @@ unsigned long pollards_rho(unsigned long n)
 void factorize(unsigned long n)
 {
 	unsigned long div;
-	
+
 	if (n <= 1)
 		return;
 	if (n % 2 == 0)
@@ -71,7 +71,7 @@ void factorize(unsigned long n)
 	}
 
 	div = pollards_rho(n);
-	
+
 	if (div == 0 || div == n)
 	{
 		printf("%lu=%lu*1\n", n, n);
@@ -101,7 +101,7 @@ int main(int argc, char *argv[])
 	}
 
 	FILE *file = fopen(argv[1], "r");
-	
+
 	if (file == NULL)
 	{
 		perror("Error opening file");
